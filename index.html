@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Arba Minch - Ethiopia's Hidden Paradise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon"><img src="images/logo.png" alt="Explore Arba Minch" class="brand-logo"></span>
+                <span class="brand-text">Explore Arba Minch</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active" data-page="home">Home</a>
+                <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+                <a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a>
+                <a href="about.html" class="nav-link" data-page="about">About</a>
+                <a href="collab.html" class="nav-link" data-page="collab">Collab</a>
+                <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slideshow" id="heroSlideshow">
+            <div class="hero-slide" style="background-image: url('images/bg.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">EXPLORE ARBA MINCH</h1>
+            <p class="hero-subtitle">Discover Ethiopia's Hidden Paradise</p>
+            <div class="hero-buttons">
+                <a href="destinations.html" class="btn btn-secondary">Explore Destinations</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to Explore</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Episodes Section -->
+    <section class="featured-episodes">
+        <div class="section-header">
+            <h2>Featured Episodes</h2>
+            <p>Our Latest YouTube Videos</p>
+        </div>
+        <div class="episodes-carousel" id="episodesCarousel">
+            <div class="episode-card">
+                <div class="video-embed">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/IT4nlXMEXCw?rel=0" title="Episode 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="episode-info">
+                    <span class="badge">Intro</span>
+                    <h3>Intro To The Account</h3>
+                    <p>Discover the story behind our journey to explore Ethiopia's hidden gems.</p>
+                </div>
+            </div>
+            <div class="episode-card">
+                <div class="video-embed">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/liPh8hTJEdg?rel=0" title="Episode 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="episode-info">
+                    <span class="badge">Trailer</span>
+                    <h3>Forty Springs</h3>
+                    <p>Official trailer for Episode 1 - Forty Springs</p>
+                </div>
+            </div>
+            <div class="episode-card">
+                <div class="video-embed">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/HHaPt8r_g3o?rel=0" title="Episode 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="episode-info">
+                    <span class="badge">Trailer</span>
+                    <h3>Forty Forty Two Steps</h3>
+                    <p>Official trailer for Episode 2 - Forty Forty Two Steps</p>
+                </div>
+            </div>
+            <div class="episode-card">
+                <div class="video-embed">
+                    <iframe loading="lazy" src="https://www.youtube.com/embed/gLgspNyh8-A?rel=0" title="Episode 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="episode-info">
+                    <span class="badge">Trailer</span>
+                    <h3>Crocodile Ranch</h3>
+                    <p>Official trailer for Episode 3 - Crocodile Ranch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Preview Section -->
+    <section class="destinations-preview">
+        <div class="section-header">
+            <h2>Explore Destinations</h2>
+            <p>Tourist Attractions Visted By Us</p>
+        </div>
+        <div class="destinations-viewport">
+            <button class="destination-nav destination-nav-prev" id="destinationPrev" aria-label="Previous destination">&#10094;</button>
+            <div class="destinations-grid" id="destinationsGrid">
+                <a href="destinations.html#forty-springs" class="destination-card" data-destination="Forty-Springs">
+                    <div class="destination-image">
+                        <img src="/images/ep1.jpg" alt="Forty Springs">
+                    </div>
+                    <div class="destination-overlay">
+                        <h3>Forty Springs</h3>
+                        <p>A Hidden Gem Inside the Rift Valley</p>
+                    </div>
+                </a>
+                <a href="destinations.html#forty-forty-two-steps" class="destination-card" data-destination="Forty-Forty-Two-Steps">
+                    <div class="destination-image">
+                        <img src="/images/ep2.jpg" alt="Forty Forty Two Steps">
+                    </div>
+                    <div class="destination-overlay">
+                        <h3>Forty Forty Two Steps</h3>
+                        <p>Steps Into the Heart of the Rift Valley</p>
+                    </div>
+                </a>
+                <a href="destinations.html#crocodile-ranch" class="destination-card" data-destination="crocodile-ranch">
+                    <div class="destination-image">
+                        <img src="/images/ep3.jpg" alt="Crocodile Ranch">
+                    </div>
+                    <div class="destination-overlay">
+                        <h3>Crocodile Ranch</h3>
+                        <p>Local Wildlife Reserve</p>
+                    </div>
+                </a>
+                <a href="destinations.html#lake-chamo" class="destination-card" data-destination="lake-chamo">
+                    <div class="destination-image">
+                        <img src="/images/ep4.jpg" alt="Lake Chamo">
+                    </div>
+                    <div class="destination-overlay">
+                        <h3>Lake Chamo</h3>
+                        <p>Scenic Lake in the Rift Valley</p>
+                    </div>
+                </a>
+                <a href="destinations.html#dorsso-waterfall" class="destination-card" data-destination="dorsso-waterfall">
+                    <div class="destination-image">
+                        <img src="/images/ep5.jpg" alt="Dorsso Waterfall">
+                    </div>
+                    <div class="destination-overlay">
+                        <h3>Dorsso Waterfall</h3>
+                        <p>Breathtaking Waterfall in the Rift Valley</p>
+                    </div>
+                </a>
+                <div class="destination-card destination-coming-soon" data-destination="coming-soon">
+                    <div class="destination-image destination-coming-soon-inner">
+                        <div class="coming-soon-badge">Coming Soon</div>
+                        <h3>New Destinations</h3>
+                        <p>More places are being explored and added next.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="destination-nav destination-nav-next" id="destinationNext" aria-label="Next destination">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="gallery-preview">
+        <div class="gallery-preview-layout">
+            <div class="gallery-preview-copy">
+                <div class="section-header section-header-left">
+                    <h2>Gallery Highlights</h2>
+                    <p>A Showcase of Selected Photographs from Our Traveling Journey</p>
+                </div>
+                <div class="gallery-link gallery-link-left">
+                    <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+                </div>
+            </div>
+            <div class="gallery-viewport">
+                <button class="gallery-nav gallery-nav-prev" id="galleryPrev" aria-label="Previous photo">&#10094;</button>
+                <div class="gallery-showcase" id="galleryShowcase">
+                    <div class="gallery-item">
+                        <img src="/images/gallery/a.jpg" alt="Gallery 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/b.jpg" alt="Gallery 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/c.jpg" alt="Gallery 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/d.jpg" alt="Gallery 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/e.jpg" alt="Gallery 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/f.jpg" alt="Gallery 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/g.jpg" alt="Gallery 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/h.jpg" alt="Gallery 8">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/i.jpg" alt="Gallery 9">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery/j.jpg" alt="Gallery 10">
+                    </div>
+                </div>
+                <button class="gallery-nav gallery-nav-next" id="galleryNext" aria-label="Next photo">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="section-header">
+            <h2>Our YouTube Channel</h2>
+            <p>Channel growth and reach at a glance</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" data-target="393">0</div>
+                <p>Subscribers</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="4811">0</div>
+                <p>Total Views</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="3">0</div>
+                <p>Episodes</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="3">0</div>
+                <p>Destinations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>Testimonials and Reviews</h2>
+            <p>Authentic Stories from Our Community</p>
+        </div>
+        <div class="testimonials-viewport">
+            <button class="testimonials-nav testimonials-nav-prev" id="testimonialsPrev" aria-label="Previous testimonial">&#10094;</button>
+            <div class="testimonials-carousel" id="testimonialsCarousel">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Believing in your vision 100%! You all have a special chemistry. The world needs what you’re creating—keep it coming!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-gold">
+                            <img src="/images/authors/c1.jpg" alt="Getayawkal Kusiya" class="author-photo" onerror="this.style.display='none'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Getayawkal Kusiya</h4>
+                            <span class="author-role">YouTube Subscriber</span>
+                            <span class="testimonial-meta">YouTube comment • Intro To The Account • 4.5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I Didn't Know My City This Well! Thanks To You Now I Know It Better Than Ever!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-coral">
+                            <img src="/images/authors/c2.jpg" alt="Amanuel Beva" class="author-photo" onerror="this.style.display='none'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Amanuel Beva</h4>
+                            <span class="author-role">YouTube Subscriber</span>
+                            <span class="testimonial-meta">YouTube comment • Episode 1 • 5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Best tourism content I've seen online. Authentic, beautiful, and inspiring. I would love to join you on your next trip!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-green">
+                            <img src="/images/authors/c3.jpg" alt="Besu Fitness" class="author-photo" onerror="this.style.display='none'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Besu Fitness</h4>
+                            <span class="author-role">Local Fitness Coach</span>
+                            <span class="testimonial-meta">YouTube comment • Episode 2 • 5/5</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Amazing experience! The landscapes are breathtaking and the whole vibe was incredible! Thanks for having me!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-green">
+                            <img src="/images/authors/c4.jpg" alt="Amanuel Paulos" class="author-photo" onerror="this.style.display='none'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Amanuel Paulos</h4>
+                            <span class="author-role">Local Visitor</span>
+                            <span class="testimonial-meta">Trip Review • Dorsso Waterfall • 5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"A Trip worth my time and money! The food, the snacks, the photos, the people, the place and everything else was perfect! Thanks for the amazing experience!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar avatar-green">
+                            <img src="/images/authors/c5.jpg" alt="Tarikua Mored" class="author-photo" onerror="this.style.display='none'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Tarikua Mored</h4>
+                            <span class="author-role">Local Visitor</span>
+                            <span class="testimonial-meta">Trip Review • Dorsso Waterfall • 5/5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>and many more</p>
+                    </div>
+                </div>
+                </div>
+            <button class="testimonials-nav testimonials-nav-next" id="testimonialsNext" aria-label="Next testimonial">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explore Arba Minch</h3>
+                <p>Your complete guide to traveling in Arba Minch, Ethiopia — made for tourists, adventurers, and curious travelers who want to experience the city the right way.</p>
+                <div class="social-icons">
+                    <a href="tel:+251936913118" class="social-icon" aria-label="Phone" title="Phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="collab.html">Collaborations</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter removed -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Explore Arba Minch. All rights reserved. Creating an authentic travel experience</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
