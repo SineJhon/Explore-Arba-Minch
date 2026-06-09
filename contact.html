@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Explore Arbaminch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon"><img src="images/logo.png" alt="Explore Arba Minch" class="brand-logo"></span>
+                <span class="brand-text">Explore Arba Minch</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+                <a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a>
+                <a href="about.html" class="nav-link" data-page="about">About</a>
+                <a href="collab.html" class="nav-link" data-page="collab">Collab</a>
+                <a href="contact.html" class="nav-link active" data-page="contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section class="page-hero contact-hero">
+        <div class="hero-bg" style="background-image: url('/images/bg.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>Have questions or want to learn more? Reach out to us!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@explorearbaminch.com">Explorearbaminch@gmail.com</a></p>
+                <p class="contact-label">For general inquiries</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p><a href="tel:+251936913118">+251 (0) 936 913 118</a></p>
+                <p class="contact-label">Talk to us</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h3>Location</h3>
+                <p>Arbaminch, Ethiopia</p>
+                <p class="contact-label">Southern Ethiopia Region</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">🌐</div>
+                <h3>Social Media</h3>
+                <div class="contact-socials">
+                    <a href="https://www.youtube.com/@ExploreArbaMinch" class="contact-social" aria-label="YouTube: Explore Arba Minch" title="YouTube: Explore Arba Minch" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="M329930 100020s-3254-22976-13269-33065c-12691-13269-26901-13354-33397-14124-46609-3396-116614-3396-116614-3396h-122s-69973 0-116608 3396c-6522 793-20712 848-33397 14124C6501 77044 3316 100020 3316 100020S-1 126982-1 154001v25265c0 26962 3315 53979 3315 53979s3254 22976 13207 33082c12685 13269 29356 12838 36798 14254 26685 2547 113354 3315 113354 3315s70065-124 116675-3457c6522-770 20706-848 33397-14124 10021-10089 13269-33090 13269-33090s3319-26962 3319-53979v-25263c-67-26962-3384-53979-3384-53979l-18 18-2-2zM132123 209917v-93681l90046 46997-90046 46684z" fill="currentColor"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+            <h2>Send us a Message</h2>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdavdozp" method="POST" accept-charset="UTF-8">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactName">Your Name</label>
+                        <input type="text" id="contactName" name="contactName" placeholder="Your full name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="contactEmail" placeholder="your@email.com" autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="contactPhone" class="js-phone-input" placeholder="Your contact number" autocomplete="tel" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="contactSubject" placeholder="How can we help?" autocomplete="organization-title" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="contactMessage" placeholder="Your message here..." rows="8" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Map Section
+        <div class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.3947849843337!2d37.87456!3d5.87789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182797c0a2b0e0fb%3A0x5b8c8e8e8e8e8e8e!2sArbaminch!5e0!3m2!1sen!2set!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div> -->
+
+        <!-- FAQ Section 
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How can I contact you?</h3>
+                    <p>You can reach us via email, phone, or through our contact form. We typically respond within 24 hours.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I book a tour?</h3>
+                    <p>We provide information and recommendations, but tour bookings can be arranged through our partner operators. Contact us for details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer sponsorships?</h3>
+                    <p>Yes! We collaborate with brands and organizations. Visit our Collaborations page for partnership opportunities.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I submit content?</h3>
+                    <p>We welcome user-submitted content. Please contact us with your submission details and we'll review it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I use your content?</h3>
+                    <p>Content usage requires permission. Contact us for licensing inquiries and usage rights.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How often do you post?</h3>
+                    <p>We publish new episodes weekly and shorts on a regular basis. Subscribe to our newsletter for updates.</p>
+                </div>
+            </div>
+        </div> -->
+    </section> 
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explore Arba Minch</h3>
+                <p>Your complete guide to traveling in Arba Minch, Ethiopia — made for tourists, adventurers, and curious travelers who want to experience the city the right way.</p>
+                <div class="social-icons">
+                    <a href="tel:+251936913118" class="social-icon" aria-label="Phone" title="Phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="collab.html">Collaborations</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter removed -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Explore Arba Minch. All rights reserved. Creating an authentic travel experience</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.1/build/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

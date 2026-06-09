@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborations - Explore Arbaminch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon"><img src="images/logo.png" alt="Explore Arba Minch" class="brand-logo"></span>
+                <span class="brand-text">Explore Arba Minch</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link" data-page="home">Home</a>
+                <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+                <a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a>
+                <a href="about.html" class="nav-link" data-page="about">About</a>
+                <a href="collab.html" class="nav-link active" data-page="collab">Collab</a>
+                <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section class="page-hero collab-hero">
+        <div class="hero-bg collab-hero-bg" style="background-image: url('images/bg.jpg');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Partnerships & Collaborations</h1>
+            <p>Join forces with us to create compelling content and authentic travel experiences.</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="collab-section benefits-section">
+        <div class="section-header">
+            <h2>Why Partner or Travel With Us?</h2>
+            <p>Discover the unique value propositions that make our collaborations and travel experiences exceptional.</p>
+        </div>
+        <div class="benefits-viewport">
+            <button class="carousel-nav carousel-nav-prev" id="benefitsPrev" aria-label="Previous benefit">&#10094;</button>
+            <div class="benefits-grid benefits-carousel-track" id="benefitsCarousel">
+            <div class="benefit-card">
+                <div class="benefit-icon">📺</div>
+                <h3>Growing Community</h3>
+                <p>We are building an engaged community across YouTube, TikTok, and digital platforms focused on travel, local experiences, and authentic storytelling.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🎬</div>
+                <h3>Creative Storytelling</h3>
+                <p>We create engaging visual content that combines storytelling, travel experiences, and local insights to showcase destinations naturally.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🌍</div>
+                <h3>Local Knowledge</h3>
+                <p>As a team deeply connected to Arba Minch and surrounding areas, we provide authentic experiences, practical guidance, and local perspectives.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">📈</div>
+                <h3>Expanding Impact</h3>
+                <p>We are committed to growing tourism awareness and creating meaningful experiences that connect people with places and communities.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🤝</div>
+                <h3>Genuine Collaboration</h3>
+                <p>We believe in real partnerships built on trust, creativity, and shared goals that benefit both visitors and collaborators.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💼</div>
+                <h3>Customized Experiences</h3>
+                <p>From personalized tours and trip planning to content collaborations and travel support, we create experiences tailored to individual needs.</p>
+            </div>
+            </div>
+            <button class="carousel-nav carousel-nav-next" id="benefitsNext" aria-label="Next benefit">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Partners Showcase -->
+    <section class="collab-section partners-section partners-showcase">
+        <div class="section-header partners-header">
+            <p class="section-kicker">Partners</p>
+            <h2>Our Collaboration Showcase</h2>
+            <p>Brands and organizations we collaborate with</p>
+        </div>
+
+        <div class="partners-viewport partners-showcase-viewport">
+            <div class="partners-grid partners-carousel-track partners-floating-stage" id="partnersCarousel" aria-label="Partner showcase carousel">
+                <button class="partner-card partner-card-button partner-float partner-float-one" type="button" data-partner-name="SY Creatives" data-partner-subtitle="Production & Content" data-partner-logo="SY" data-partner-image="images/partners/sy.png" data-partner-focus="Production" data-partner-detail="A creative production partnership supporting cinematic visuals, dependable field gear, and refined content delivery.">
+                    <span class="partner-card-orb"></span>
+                    <div class="partner-logo partner-logo--transparent partner-logo-shell"><img src="images/partners/sy.png" alt="SY Creatives Logo"></div>
+                    <div class="partner-card-copy">
+                        <h3>SY Creatives</h3>
+                        <p>Production &amp; Content</p>
+                    </div>
+                </button>
+
+                <button class="partner-card partner-card-button partner-float partner-float-two" type="button" data-partner-name="Ab Design" data-partner-subtitle="Graphic Design" data-partner-logo="AD" data-partner-image="images/partners/ad.png" data-partner-focus="Design" data-partner-detail="A creative design partnership focused on visual identity, brand development, and engaging user experiences.">
+                    <span class="partner-card-orb"></span>
+                    <div class="partner-logo partner-logo--transparent partner-logo-shell"><img src="images/partners/ad.png" alt="Ab Design Logo"></div>
+                    <div class="partner-card-copy">
+                        <h3>Ab Design</h3>
+                        <p>Graphic Design</p>
+                    </div>
+                </button>
+
+                <button class="partner-card partner-card-button partner-float partner-float-three" type="button" data-partner-name="Selam Catering and Restaurant" data-partner-subtitle="Food Provision on Trips" data-partner-logo="SA" data-partner-image="images/partners/sa.png" data-partner-focus="Food" data-partner-detail="A trusted food provision partner supporting our trips with quality dining experiences, local flavors, and reliable service.">
+                    <span class="partner-card-orb"></span>
+                    <div class="partner-logo partner-logo--transparent partner-logo-shell"><img src="images/partners/sa.png" alt="Selam Catering and Restaurant Logo"></div>
+                    <div class="partner-card-copy">
+                        <h3>Selam Catering and Restaurant</h3>
+                        <p>Food Provision on Trips</p>
+                    </div>
+                </button>
+
+                <button class="partner-card partner-card-button partner-float partner-float-four" type="button" data-partner-name="Besu Fitness" data-partner-subtitle="Fitness & Wellness" data-partner-logo="BF" data-partner-image="images/partners/bf.png" data-partner-focus="Wellness" data-partner-detail="A fitness and wellness partnership dedicated to promoting healthy lifestyles and providing expert guidance for our travelers.">
+                    <span class="partner-card-orb"></span>
+                    <div class="partner-logo partner-logo--transparent partner-logo-shell"><img src="images/partners/bf.png" alt="Besu Fitness Logo"></div>
+                    <div class="partner-card-copy">
+                        <h3>Besu Fitness</h3>
+                        <p>Fitness &amp; Wellness</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Opportunities Section -->
+    <section class="collab-section opportunities-section">
+        <div class="section-header">
+            <h2>Collaboration Types</h2>
+            <p>Different ways to work together</p>
+        </div>
+        <div class="opportunities-grid">
+            <div class="opportunity-card">
+                <h3>🎥 Featured Destination Episodes</h3>
+                <p>Give your hotel, destination, café, resort, or experience its own dedicated feature episode through authentic storytelling and cinematic content.</p>
+                <ul>
+                    <li>Dedicated travel feature</li>
+                    <li>Visual storytelling & promotion</li>
+                    <li>Global distribution</li>
+                </ul>
+            </div>
+            <div class="opportunity-card">
+                <h3>📢 Sponsored Promotion</h3>
+                <p>Promote your business naturally through our videos, content, and audience engagement. We can feature, mention, recommend, wear, or showcase partner products and brands in ways that feel authentic.</p>
+                <ul>
+                    <li>Brand mentions & integrations</li>
+                    <li>Product showcasing</li>
+                    <li>Merchandise placement & promotion</li>
+                </ul>
+            </div>
+            <div class="opportunity-card">
+                <h3>🚐 Travel & Hospitality Partnerships</h3>
+                <p>Partner with us through accommodation, meals, transportation, or travel support while becoming part of authentic experiences around Arba Minch and nearby destinations.</p>
+                <ul>
+                    <li>Hotel, food & accommodation collaborations</li>
+                    <li>Vehicle and transport partnerships</li>
+                    <li>Travel support & experience integration</li>
+                </ul>
+            </div>
+            <div class="opportunity-card">
+                <h3>🤝 Experience & Brand Partnerships</h3>
+                <p>Build long-term collaborations through tourism experiences, local business promotion, and creative partnerships that connect naturally with travelers and audiences.</p>
+                <ul>
+                    <li>Tourism & business exposure</li>
+                    <li>Co-branded experiences</li>
+                    <li>Shared growth opportunities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Form Section -->
+    <section class="collab-section form-section">
+        <div class="section-header">
+            <h2>Start Your Collaboration</h2>
+            <p>Tell us about your partnership opportunity</p>
+        </div>
+        <div class="collab-form-container">
+            <div class="collab-form-shell">
+                <aside class="collab-form-aside" aria-hidden="true">
+                   <h3>Let's Create Experiences Together</h3>
+                   <p>Whether you are a hotel, destination, business, travel service, or brand, let's create authentic experiences, meaningful partnerships, and unforgettable stories together.</p>
+                <ul class="collab-form-highlights">
+                   <li>Flexible tours, trip & partnership opportunities</li>
+                   <li>Authentic travel storytelling & promotion</li>
+                   <li>Friendly communication and collaborative planning</li>
+                </ul>
+                </aside>
+
+                <form class="collab-form" id="collabForm" action="https://formspree.io/f/xdavdozp" method="POST" accept-charset="UTF-8">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Your full name" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your company or organization" autocomplete="organization" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@company.com" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="js-phone-input" placeholder="Your contact number" autocomplete="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="collaborationType">Collaboration Type</label>
+                        <select id="collaborationType" name="collaborationType" required>
+                            <option value="">Select collaboration type...</option>
+                            <option value="featured-episode">🎥 Featured Destination Episodes</option>
+                            <option value="sponsored-content">📢 Sponsored Promotion</option>
+                            <option value="campaign-promotion">🚐 Travel & Hospitality Partnerships</option>
+                            <option value="brand-partnership">🤝 Experience & Brand Partnerships</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your collaboration proposal..." rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Submit Collaboration Proposal</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section
+    <section class="collab-section stats-section">
+        <div class="section-header">
+            <h2>Our Impact</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">15M+</div>
+                <p>Total Views</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">250K+</div>
+                <p>Engaged Subscribers</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">50+</div>
+                <p>Countries Reached</p>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">180+</div>
+                <p>Quality Episodes</p>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="partner-modal" id="partnerModal" aria-hidden="true">
+        <div class="partner-modal-backdrop" data-partner-close></div>
+        <div class="partner-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="partnerModalTitle">
+            <button type="button" class="partner-modal-close" data-partner-close aria-label="Close partner details">&times;</button>
+            <div class="partner-modal-logo" id="partnerModalLogo">SH</div>
+            <p class="partner-modal-kicker" id="partnerModalFocus">Hospitality</p>
+            <h3 id="partnerModalTitle">Serene Highlands Resort</h3>
+            <p class="partner-modal-subtitle" id="partnerModalSubtitle">Luxury accommodation partnership</p>
+            <p class="partner-modal-body" id="partnerModalBody">A premium accommodation collaboration designed to elevate the guest journey with scenic stays, seamless hosting, and polished visitor care.</p>
+        </div>
+    </div> 
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Explore Arba Minch</h3>
+                <p>Your complete guide to traveling in Arba Minch, Ethiopia — made for tourists, adventurers, and curious travelers who want to experience the city the right way.</p>
+                <div class="social-icons">
+                    <a href="tel:+251936913118" class="social-icon" aria-label="Phone" title="Phone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="collab.html">Collaborations</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter removed -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Explore Arba Minch. All rights reserved. Creating an authentic travel experience</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.12.1/build/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
